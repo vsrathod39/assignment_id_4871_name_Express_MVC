@@ -17,7 +17,7 @@ router.get("/students", async (req, res) => {
         const items = await Student.find().lean().exec();
         return res.status(201).send({items});
     } catch (error) {
-        return res.send({error: error.message, status: failed});
+        return res.send({error: error.message, status: "failed"});
     }
 });
 

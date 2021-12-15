@@ -1,10 +1,10 @@
 const mongoose = require("mongoose");
 
 const resultSchema = new mongoose.Schema({
-    student_id: {type: mongoose.Schema.Types.ObjectId},
+    student_id: {type: mongoose.Schema.Types.ObjectId, ref: "student", required: true},
     results: [{
-        evalution_id: {type: mongoose.Schema.Types.ObjectId},
-        mark: {type: mongoose.Schema.Types.ObjectId}
+        evalution_id: {type: mongoose.Schema.Types.ObjectId, ref: "evaltion", required: true},
+        mark: {type: Number, required: true}
     }]
 }, {
     timestamps: true,

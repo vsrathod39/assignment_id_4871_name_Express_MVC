@@ -21,6 +21,7 @@
   "homepage": "https://github.com/vsrathod39/assignment_id_4871_name_Express_MVC#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^6.1.1"
+    "mongoose": "^6.1.1",
+    "mongoose-auto-increment": "^5.0.1"
   }
 }
